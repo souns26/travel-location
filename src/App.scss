@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+
+.Aero-logo {
+    height: 10vmin;
+    pointer-events: auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+
+.main-page {
+  background: #242429;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.city-name {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 6vh;
+
+}
+
+.leaflet-container {
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 76vh;
+  border-radius: 15px;
+}
+
+[data-element="crisis-message"] {
+  max-width: 999em !important; 
+}
+
+[data-element="crisis-message"] > a{
+  color:white; 
+}
