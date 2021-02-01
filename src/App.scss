@@ -46,3 +46,9 @@
 [data-element="crisis-message"] > a{
   color:white; 
 }
+
+@media only screen and (max-width: 1297px) {
+  .main-page {
+    overflow: scroll;
+  }
+}
