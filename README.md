@@ -29,3 +29,5 @@ Also, available [here](https://travel-location.herokuapp.com/).
 APIs used: 
 1. [REST Countries](https://restcountries.eu/)
 2. [OpenTripMap API](https://opentripmap.io/docs)
+
+**NOTE:** Feel free to suggest any changes in this application.
