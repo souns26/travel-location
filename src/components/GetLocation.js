@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Maps from "./Maps";
-import Loader from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 function GetLocation(location) {
   const API_KEY = "5ae2e3f221c38a28845f05b6259a29973e54a21d2ea41327334defad";
@@ -62,7 +62,7 @@ function GetLocation(location) {
 
   return (
     <div>
-      <Loader
+      <ThreeDots 
         visible={loading}
         type="ThreeDots"
         color="#00BFFF"

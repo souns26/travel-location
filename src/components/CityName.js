@@ -11,14 +11,14 @@ function CityName({ state }) {
     if (state.clicked === true) {
       gsap.fromTo(cityName, {opacity: 0}, {opacity: 1, duration: 50 , ease: "elastic"});
 
-      const url = "https://restcountries.eu/rest/v2/all?fields=name;capital"; //"https://countriesnow.space/api/v0.1/countries/capital";
+      const url = "https://restcountries.com/v3.1/all?fields=name,capital"; //"https://countriesnow.space/api/v0.1/countries/capital";
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
           // console.log(data.length);
           // let datas = data.data;
           let selectedCity = data[Math.floor(Math.random() * data.length)];
-          setCity(selectedCity.capital + ", " + selectedCity.name);
+          setCity(selectedCity.capital + ", " + selectedCity.name.common);
           setLocation(selectedCity)
           // console.log("1", city);
         });
