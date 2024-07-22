@@ -14,7 +14,7 @@
  2. Start the development server
  
  ```sh
- npm run
+ npm run start
  ```
 
 Runs the app in the development mode.
