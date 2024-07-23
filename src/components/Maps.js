@@ -68,8 +68,8 @@ function Maps(props) {
           >
             <div>
               <h2>{activeLocation.name}</h2>
-              <a href={activeLocation.wikipedia} target="_blank">
-                { (activeLocation.preview.source) ? <img src={activeLocation.preview.source} width="100%" height="270px"></img> :<p>No Image</p> }
+              <a href={activeLocation.wikipedia} target="_blank" rel="noreferrer">
+                { (activeLocation.preview.source) ? <img src={activeLocation.preview.source} width="100%" height="270px" alt="maps"></img> :<p>No Image</p> }
               </a>
             </div>
           </Popup>
@@ -77,6 +77,7 @@ function Maps(props) {
       </MapContainer>
       <br></br>
       <div
+        className="sky-widget"
         data-skyscanner-widget="LocationWidget"
         data-locale="en-US"
         data-market="IN"

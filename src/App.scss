@@ -52,3 +52,13 @@
     overflow: scroll;
   }
 }
+
+.sky-widget iframe{
+  position:  relative !important;
+  width: 25% !important;
+}
+
+.three-dots {
+  display: flex;
+  justify-content: center;
+}

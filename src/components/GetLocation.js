@@ -62,6 +62,7 @@ function GetLocation(location) {
 
   return (
     <div>
+      <div className="three-dots">
       <ThreeDots 
         visible={loading}
         type="ThreeDots"
@@ -69,6 +70,7 @@ function GetLocation(location) {
         height={80}
         width={80}
       />
+      </div>
       {mapLocation && <Maps xid={mapLocation} />}{" "}
     </div>
   );
