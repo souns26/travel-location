@@ -20,7 +20,7 @@
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Also, available [here](https://travel-location.herokuapp.com/).
+Also, available [here](https://travel-location.netlify.app/).
 
 
 # Tech Stack Used:
