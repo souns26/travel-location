@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Maps from "./Maps";
 import { ThreeDots } from "react-loader-spinner";
 
@@ -13,6 +13,7 @@ function GetLocation(location) {
     return new Promise((resolve) => setTimeout(resolve, milliseconds));
   };
   useEffect(() => {
+    console.log(location);
     setLoading(true);
     let lat_lon = [];
     const url =
@@ -56,7 +57,7 @@ function GetLocation(location) {
             setLoading(false);
           });
       });
-  }, []);
+  }, [location]);
 
   // console.log("mapLocation",typeof(loading));
 

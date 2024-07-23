@@ -48,8 +48,9 @@ function Maps(props) {
             position={[mark.point.lat, mark.point.lon]}
             eventHandlers={{
               click: (e) => {
-                if (!activeLocation)
+                if (!activeLocation){
                   setActiveLocation(mark);
+                }
                 else 
                   setActiveLocation(null);
               },

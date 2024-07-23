@@ -8,7 +8,7 @@ function CityName({ state }) {
   const [location, setLocation] = useState("");
 
   useEffect(() => {
-    if (state.clicked === true) {
+    // if (state.clicked === true) {
       gsap.fromTo(cityName, {opacity: 0}, {opacity: 1, duration: 50 , ease: "elastic"});
 
       const url = "https://restcountries.com/v3.1/all?fields=name,capital"; //"https://countriesnow.space/api/v0.1/countries/capital";
@@ -22,8 +22,8 @@ function CityName({ state }) {
           setLocation(selectedCity)
           // console.log("1", city);
         });
-    }
-  }, []);
+    // }
+  }, [state.clicked]);
 
   // console.log("2", location,city);
 
